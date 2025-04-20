@@ -1,0 +1,124 @@
+/*
+ blanco: #ffffff
+ negro: #000000
+ aliceblue: #f0f8ff
+ purpura: #800080
+*/
+
+/* Reset de CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Patrick Hand", cursive;
+
+}
+
+/*body*/
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+
+/*header*/
+header{
+    height: 10vh;
+    background-color: #f0f8ff ;
+   
+    }
+
+header h1 {
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+/*body sections*/
+
+.menu{
+    text-align: end;
+    padding: 15 px;
+    text-underline-position: below;
+    text-decoration-color: #800080 ;
+}
+
+
+/* sobre nosotros*/
+
+.sobreNosotros h2 {
+    text-align: center;
+
+}
+
+
+/* Primer Subtitulo */
+.primerSubtitulo{
+    font-size:medium;
+    background-color: #98a798;
+    text-decoration:wavy;
+    text-shadow: 0cqmax;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Segundo Subtitulo*/
+.segundoSubtitulo{
+    font-size:medium;
+  
+    text-decoration:wavy;
+    text-shadow: 0cqmax;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Tercer Subtitulo*/ 
+
+.tercerSubtitulo {
+    font-size:medium;
+    text-decoration:wavy;
+    text-shadow: 0cqmax;
+    text-align: center;
+    padding: 10px;
+}
+
+.mensaje {
+    font-size:medium;
+    text-decoration:wavy;
+    text-shadow: 0cqmax;
+    text-align: center;
+    padding: 10px;
+}
+
+.sobreNosotros img{
+    align-items: center;
+}
+
+/*footer*/
+ 
+
+    footer {
+        background: #222;
+        height: 10vh;
+        color: #ffff;
+        text-align: center;
+        padding: 10px 0;
+     
+       
+    }
+
+    footer a {
+        color: #ffff;
+        font-size: 15px;
+        transition: transform 0.3s ease, color 0.3s ease;
+        padding: 15px;
+    }
+   
+
+
