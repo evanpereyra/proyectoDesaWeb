@@ -4,69 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>Turno</title>
 </head>
 
 <body>
-    <!--  header-->
-    <header>
-        <!--Titulo-->
-        <div class="container text-center">
-            <div class="row">
-                <!--navbar -->
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <h1 aria-colspan="">VETERINARIA</h1>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./turno.html">Turno</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./tienda.html">Tienda</a>
-                                </li>
-                            </ul>
-                        </div>
+    <div class="grid-container">
+        <!--  header-->
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-1">Veterinaria</span>
+            </a>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./turno.html">Turno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tienda.html">Tienda</a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
+                </div>
+            </nav>
+        </header>
 
+        <!-- main -->
+        <main>
+            <div class="py-5 text-center">
+                <h1>TURNO</h1>
+                <p class="lead">¡No pierdas más tiempo! Accede a nuestro sistema de turnos online y asegura la atención
+                    que tu mejor amigo merece de manera rápida y sencilla. ¡Su salud es nuestra prioridad!</p>
             </div>
-        </div>
-    </header>
-    <!--Footer-->
-    <footer>
-        <div class="container text-center">
-            <div class="row justify-content-md-center">
-                <div class="col-md-auto">
-                    Síguenos en nuestras redes:
+
+            <div class="row g-5">
+                <!-- <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="text-primary">Turnos</span>
+                  <span class="badge bg-primary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Product name</h6>
+                      <small class="text-body-secondary">Brief description</small>
+                    </div>
+                    <span class="text-body-secondary">$12</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Second product</h6>
+                      <small class="text-body-secondary">Brief description</small>
+                    </div>
+                    <span class="text-body-secondary">$8</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Third item</h6>
+                      <small class="text-body-secondary">Brief description</small>
+                    </div>
+                    <span class="text-body-secondary">$5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                    <div class="text-success">
+                      <h6 class="my-0">Promo code</h6>
+                      <small>EXAMPLECODE</small>
+                    </div>
+                    <span class="text-success">−$5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (USD)</span>
+                    <strong>$20</strong>
+                  </li>
+                </ul>
+        
+                <form class="card p-2">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Promo code">
+                    <button type="submit" class="btn btn-secondary">Redeem</button>
+                  </div>
+                </form>
+              </div> -->
+                <div class="col-md-6 col-lg-8">
+                    <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label for="firstName" class="form-label">Nombre del Paciente</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="country" class="form-label">Especialidad</label>
+                                <select class="form-select" id="especialidad" required="">
+                                    <option value="Consultas General">Consultas General</option>
+                                    <option>Reproducción</option>
+                                    <option>Vacunacion</option>
+                                    <option>Control</option>
+                                    <option>Cirugía</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="state" class="form-label">Fecha</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Primera Consulta</label>
+                        </div>
+
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-primary me-md-2" type="button">Cancelar</button>
+                            <button class="btn btn-primary" type="submit">Aceptar</button>
+                        </div>
+
+
+                        
+                    </form>
                 </div>
             </div>
-        </div>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-3">Facebook: Veterinaria</div>
-                <div class="col-lg-3">Whatsapp: +54 9 351 3771177</div>
-                <div class="col-lg-3">Email: contacto@veterinaria.com</div>
-                <div class="col-lg-3">Instagram: veterinaria_in</div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        </main>
+
+        <!--Footer-->
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="www.facebook.com" target="_blank">
+                        <img class="imagen-footer" src="../assets/icono/facebook.ico" alt="">
+                        <span>Veterinaria</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="543513771177" target="_blank">
+                        <img class="imagen-footer" src="../assets/icono/whatsapp.ico" alt="">
+                        <span>+54 9 351 377117</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="www.gmail.com" target="_blank" aria-label="Correo">
+                        <img class="imagen-footer" src="../assets/icono/mail.ico" alt="">
+                        <span>contacto@veterinaria.com</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="www.instagram.com" target="_blank" aria-label="Instagram">
+                        <img class="imagen-footer" src="../assets/icono/instagram.ico" alt="">
+                        <span>veterinaria_in</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2025 Veterinaria, Inc - siguenos en nuestra redes</p>
+        </footer>
 
 
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
