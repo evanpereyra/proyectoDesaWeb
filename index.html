@@ -6,163 +6,183 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <title>PreEntrega2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <title>PreEntrega2</title>  
 </head>
 
 <body>
-  <header>
-    <!--Titulo-->
-    <div class="container text-center">
-      <div class="row">
-        <!--navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+  <div class = "grid-container">
+    <!--header -->
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-1">Veterinaria</span>
+      </a>
+      <nav class="navbar navbar-expand-lg ">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <h1 aria-colspan="">VETERINARIA</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/turno.html">Turno</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/tienda.html">Tienda</a>
-                </li>
-              </ul>
-            </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pages/turno.html">Turno</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-        </nav>
-
-      </div>
-    </div>
-
-  </header>
-  <!--<main>-->
-  <main>
-    <!-- Carrusel  -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/perro-veterinario-istock.jpg" class="img-fluid img-thumbnail" alt="Primera Imagen">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/perro_vet1.jpg" class="d-block w-100" alt="Segundo Imagen">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/Untitled_Familia_Gatos.jpg" class="d-block w-100" alt="Tercero Imagen">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
-
-
-    <!-- titulo indormativo  -->
-    <div class="container text-center">
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          <h2>Sobre Nosotros</h2>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!-- informacion de veterinaria  -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8 col-lg-8">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Nuestros Servicios</h5>
-              <p class="card-text">
-                <br>✅ Consultas generales y vacunación – Mantén a tu mascota sana con nuestros chequeos regulares.
-                <br>✅ Urgencias 24/7 – Atención inmediata para cualquier emergencia.
-                <br>✅ Cirugías y esterilización – Procedimientos seguros con la última tecnología.
-                <br>✅ Peluquería y estética – Baño, corte y cuidado para que tu mascota luzca increíble.
-                <br>✅ Alimentos y accesorios – Todo lo que necesitas en un solo lugar.
-                <br>
-              </p>
-
-            </div>
+      </nav>
+   </header>
+    <!--<main>-->
+    <main>
+      <!-- Carrusel  -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/perro-veterinario-istock.jpg" class="img-fluid img-thumbnail" alt="Primera Imagen">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/perro_vet1.jpg" class="d-block w-100" alt="Segundo Imagen">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/Untitled_Familia_Gatos.jpg" class="d-block w-100" alt="Tercero Imagen">
           </div>
         </div>
-        <div class="col-12 col-md-4 col-lg-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Cuidamos a tus mascotas con amor y profesionalismo</h5>
-              <p class="card-text">
-                En Veterinaria, sabemos que tu mascota es parte de tu familia.
-                <br>Nuestro equipo de profesionales está dedicado a brindar la mejor atención médica y cariño a perros,
-                gatos y otras mascotas.
-              </p>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+     
+      <!-- titulo indormativo  -->
+      <div class="container text-center">
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto">
+            <h2>Sobre Nosotros</h2>
+          </div>
+  
+        </div>
+      </div>
+  
+  
+      <!-- informacion de veterinaria  -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nuestros Servicios</h5>
+                <div>
+                  <ul class="lista-servicio">
+                    <li><p class="lh-1">Consultas generales y vacunación – Mantén a tu mascota sana con nuestros chequeos regulares.</p> </li>
+                    <li><p class="lh-1">Urgencias 24/7 – Atención inmediata para cualquier emergencia.</p> </li>
+                    <li><p class="lh-1">Cirugías y esterilización – Procedimientos seguros con la última tecnología.</p> </li>
+                    <li><p class="lh-1">Peluquería y estética – Baño, corte y cuidado para que tu mascota luzca increíble.</p></li>
+                    <li><p class="lh-1">Alimentos y accesorios – Todo lo que necesitas en un solo lugar.</p> </li>
+                  </ul>
+                </div>
+                <!-- <p class="card-text">
+                  <br>✅ Consultas generales y vacunación – Mantén a tu mascota sana con nuestros chequeos regulares.
+                  <br>✅ Urgencias 24/7 – Atención inmediata para cualquier emergencia.
+                  <br>✅ Cirugías y esterilización – Procedimientos seguros con la última tecnología.
+                  <br>✅ Peluquería y estética – Baño, corte y cuidado para que tu mascota luzca increíble.
+                  <br>✅ Alimentos y accesorios – Todo lo que necesitas en un solo lugar.
+                  <br>
+                </p> -->
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cuidamos a tus mascotas con amor y profesionalismo</h5>
+                <p class="card-text">
+                  En Veterinaria, sabemos que tu mascota es parte de tu familia.
+                  <br>Nuestro equipo de profesionales está dedicado a brindar la mejor atención médica y cariño a perros,
+                  gatos y otras mascotas.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container text-center">
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          <p class="h6">
-            <em>
-              <strong>
-                📍¿Dónde encontrarnos?
-              </strong></em>
-          </p>
-          <p><small>📌 Calle Ficticia #123, Ciudad Imaginaria</small>
-            <small><br> 📞 Teléfono: (123) 456-7890</small>
-            <small><br>📧 Email: contacto@veterinaria.com</small>
-          <p>
+      <div class="container text-center">
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto">
+            <p class="h6">
+              <em>
+                <strong>
+                  📍¿Dónde encontrarnos?
+                </strong></em>
+            </p>
+            <p><small>📌 Calle Ficticia #123, Ciudad Imaginaria</small>
+              <small><br> 📞 Teléfono: (123) 456-7890</small>
+              <small><br>📧 Email: contacto@veterinaria.com</small>
+            <p>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
+  
+  
+  
+    <!--Footer-->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="www.facebook.com" target="_blank" >
+            <img class="imagen-footer"  src="../assets/icono/facebook.ico" alt="">
+            <span>Veterinaria</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="543513771177" target="_blank">
+            <img class="imagen-footer"  src="../assets/icono/whatsapp.ico" alt="">
+            <span>+54 9 351 377117</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="www.gmail.com" target="_blank" aria-label="Correo">
+            <img class="imagen-footer"  src="../assets/icono/mail.ico" alt="">
+            <span>contacto@veterinaria.com</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="www.instagram.com" target="_blank" aria-label="Instagram">
+            <img class="imagen-footer"  src="../assets/icono/instagram.ico" alt="">
+            <span>veterinaria_in</span>
+          </a>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2025 Veterinaria, Inc - siguenos en nuestra redes</p>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"></script>
+  </body>
 
-
-
-  <!--Footer-->
-  <footer>
-    <div class="container text-center">
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          Síguenos en nuestras redes:
-        </div>
-      </div>
-    </div>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-3">Facebook: Veterinaria</div>
-        <div class="col-lg-3">Whatsapp: +54 9 351 3771177</div>
-        <div class="col-lg-3">Email: contacto@veterinaria.com</div>
-        <div class="col-lg-3">Instagram: veterinaria_in</div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
-</body>
+  </div>
+  
 
 </html>

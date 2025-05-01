@@ -3,6 +3,8 @@
  negro: #000000
  aliceblue: #f0f8ff
  purpura: #800080
+ olive: ##808000
+
 */
 
 /* Reset de CSS */
@@ -11,9 +13,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Patrick Hand", cursive;
+    /* font-family: "Patrick Hand", cursive; */
+    font-family: "Lemonada", cursive;
 
 }
+
+
 
 /*body*/
 
@@ -25,8 +30,22 @@ body {
     
     }
 
+/*body sections*/
+
+.menu{
+    text-align: end;
+    padding: 15 px;
+    text-underline-position: below;
+    text-decoration-color: #800080 ;
+}
+
+
+
+
+
 
 /*header*/
+
 header{
     height: 10vh;
     background-color: #f0f8ff ;
@@ -39,23 +58,17 @@ header h1 {
     
 }
 
-/*body sections*/
-
-.menu{
-    text-align: end;
-    padding: 15 px;
-    text-underline-position: below;
-    text-decoration-color: #800080 ;
+header ul li a{
+    text-decoration: none;
+    border: solid;
+    border-color: #7D8471;
+    border-radius: 50px;
+    background-color: #7D8471;
+    color: white;
+  
 }
 
-
-/* sobre nosotros*/
-
-.sobreNosotros h2 {
-    text-align: center;
-
-}
-
+/* main */
 
 /* Primer Subtitulo */
 .primerSubtitulo{
@@ -67,11 +80,16 @@ header h1 {
     padding: 10px;
 }
 
+/* sobre nosotros*/
+
+.sobreNosotros h2 {
+    text-align: center;
+
+}
 
 /* Segundo Subtitulo*/
 .segundoSubtitulo{
     font-size:medium;
-  
     text-decoration:wavy;
     text-shadow: 0cqmax;
     text-align: center;
@@ -100,25 +118,100 @@ header h1 {
     align-items: center;
 }
 
-/*footer*/
+/* grid */
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px, 850px, 100px;
+    column-gap: 10px;
+    row-gap: 0px;   
+    align-items: start;
+    align-content: space-around;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+.navbar {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f8ff;
+    color: #800080;
+    padding: 10px;
+}
+
+.navbar a {
+    padding: 10px;
+    text-decoration: navy;
+    text-align: end;
+}
+
+.container {
+    display: flex;
+    width: 900px; 
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+
+.carousel-item img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+    height: auto; /* Mantiene la proporción original (puede resultar en diferentes alturas) */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor manteniendo la proporción */
+    min-height: 300px; /* Establece una altura mínima para todos los slides (ajusta el valor) */
+    max-height: 400px; /* Establece una altura máxima (opcional) */
+  } 
+
+
+
+.navbar {
+    --bs-bg-opacity: 0;
+    
+  }
+
+.lista-servicio{
+    list-style-type:'✅';
+
+  }
+
+
+/*footer */
+
+footer {
+    background: #f0d1d1;
+    height: 25vh;
+    /* color: #ffff; */
+    text-align: center;
+    padding: 10px 0;
  
-
-    footer {
-        background: #222;
-        height: 10vh;
-        color: #ffff;
-        text-align: center;
-        padding: 10px 0;
-     
-       
-    }
-
-    footer a {
-        color: #ffff;
-        font-size: 15px;
-        transition: transform 0.3s ease, color 0.3s ease;
-        padding: 15px;
-    }
    
+}
+
+
+footer ul li a {
+    
+   /* background-color: #e6d4d4;*/
+    border-color: none;
+    color: var(--bs-secondary-color);
+
+
+}   
+
+footer ul li {
+
+    width: 300px;
+    border-bottom-style: none;
+    border-bottom-color: olive;
+       
+}
+
+
+.imagen-footer {
+   
+    width:  30px;
+
+}
 
 
