@@ -214,4 +214,28 @@ footer ul li {
 
 }
 
+.row.g-5 {
+    justify-content: center; /* Centra las columnas horizontalmente */
+  }
 
+.row.g-5 .col-md-12 {
+    /* text-align: center; */
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    height: 200%; /* O la altura que necesites */
+    padding-inline: 100px;
+  }
+
+  .form-check{
+    justify-content: end;
+    margin-top: 80px; /* Espacio arriba (ajusta el valor según necesites) */
+    margin: 100px ;
+    margin-bottom: 100px;
+    padding: 10px;
+  }
+
+  button {
+    justify-content: end;
+
+  }
