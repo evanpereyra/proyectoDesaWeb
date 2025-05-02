@@ -48,12 +48,17 @@
 
         <!-- main -->
         <main>
-            <div class="py-5 text-center">
-                <h1>TURNO</h1>
-                <p class="lead">¡No pierdas más tiempo! Accede a nuestro sistema de turnos online y asegura la atención
-                    que tu mejor amigo merece de manera rápida y sencilla. ¡Su salud es nuestra prioridad!</p>
-            </div>
-
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light">TURNO</h1>
+                        <p class="lead">¡No pierdas más tiempo! Accede a nuestro sistema de turnos online y asegura la
+                            atención que tu mejor amigo merece de manera rápida y sencilla. ¡Su salud es nuestra
+                            prioridad!
+                        </p>
+                    </div>
+                </div>
+            </section>
             <div class="row g-5">
                 <!-- <div class="col-md-5 col-lg-4 order-md-last">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -106,12 +111,18 @@
                     <form class="needs-validation" novalidate="">
                         <div class="row g-3">
                             <div class="col-md-12">
-                                <label for="firstName" class="form-label">Nombre del Paciente</label>
+                                <label for="inputPassword5" class="form-label">Nombre del Paciente</label>
+                                <input type="text" id="inputPassword5" class="form-control"
+                                    aria-describedby="passwordHelpBlock">
+                                <div id="passwordHelpBlock" class="form-text">
+                                    Ingresa el nombre de tu mascota.
+                                </div>
+                                <!-- <label for="firstName" class="form-label">Nombre del Paciente</label>
                                 <input type="text" class="form-control" id="firstName" placeholder="" value=""
                                     required="">
                                 <div class="invalid-feedback">
                                     Valid first name is required.
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="col-md-12">
@@ -123,21 +134,18 @@
                                     <option>Control</option>
                                     <option>Cirugía</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    Please select a valid country.
+                                <div id="passwordHelpBlock" class="form-text">
+                                    Por favor, selecciona una especialidad.
                                 </div>
                             </div>
 
                             <div class="col-md-12">
-                                <label for="state" class="form-label">Fecha</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
-                                    required="">
-                                <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Fecha del Turno</label>
+                                    <input class="form-control" type="date" id="formFile" value="01-06-2017">
                                 </div>
+
                             </div>
-
-
                         </div>
 
 
@@ -154,7 +162,7 @@
                         </div>
 
 
-                        
+
                     </form>
                 </div>
             </div>
@@ -190,15 +198,13 @@
             </ul>
             <p class="text-center text-body-secondary">© 2025 Veterinaria, Inc - siguenos en nuestra redes</p>
         </footer>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-            crossorigin="anonymous"></script>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
