@@ -3,7 +3,7 @@
  negro: #000000
  aliceblue: #f0f8ff
  purpura: #800080
- olive: ##808000
+ olive: #808000
 
 */
 
@@ -27,17 +27,17 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    
+
     }
 
 /*body sections*/
-
+/* 
 .menu{
     text-align: end;
     padding: 15 px;
     text-underline-position: below;
     text-decoration-color: #800080 ;
-}
+} */
 
 
 
@@ -49,13 +49,13 @@ body {
 header{
     height: 10vh;
     background-color: #f0f8ff ;
-   
+
     }
 
 header h1 {
     text-align: center;
     font-size: 50px;
-    
+
 }
 
 header ul li a{
@@ -65,53 +65,7 @@ header ul li a{
     border-radius: 50px;
     background-color: #7D8471;
     color: white;
-  
-}
 
-/* main */
-
-/* Primer Subtitulo */
-.primerSubtitulo{
-    font-size:medium;
-    background-color: #98a798;
-    text-decoration:wavy;
-    text-shadow: 0cqmax;
-    text-align: center;
-    padding: 10px;
-}
-
-/* sobre nosotros*/
-
-.sobreNosotros h2 {
-    text-align: center;
-
-}
-
-/* Segundo Subtitulo*/
-.segundoSubtitulo{
-    font-size:medium;
-    text-decoration:wavy;
-    text-shadow: 0cqmax;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Tercer Subtitulo*/ 
-
-.tercerSubtitulo {
-    font-size:medium;
-    text-decoration:wavy;
-    text-shadow: 0cqmax;
-    text-align: center;
-    padding: 10px;
-}
-
-.mensaje {
-    font-size:medium;
-    text-decoration:wavy;
-    text-shadow: 0cqmax;
-    text-align: center;
-    padding: 10px;
 }
 
 .sobreNosotros img{
@@ -121,9 +75,9 @@ header ul li a{
 /* grid */
 .grid-container {
     display: grid;
-    grid-template-rows: 100px, 850px, 100px;
+    /* grid-template-rows: 200px, 800px, 200px; */
     column-gap: 10px;
-    row-gap: 0px;   
+    row-gap: 0px;
     align-items: start;
     align-content: space-around;
     grid-template-areas:
@@ -147,9 +101,24 @@ header ul li a{
     text-align: end;
 }
 
+/* Navbar */
+
+.navbar-collapse.show {
+    z-index: 2000;
+}
+.navbar-toggler {
+    z-index: 2000;
+}
+
+.navbar {
+    --bs-bg-opacity: 0;
+
+  }
+
+
 .container {
     display: flex;
-    width: 900px; 
+    width: 900px;
     flex-direction: column;
     margin-top: 20px;
 }
@@ -157,19 +126,16 @@ header ul li a{
 
 
 .carousel-item img {
-    width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
-    height: auto; /* Mantiene la proporción original (puede resultar en diferentes alturas) */
-    object-fit: cover; /* Recorta la imagen para llenar el contenedor manteniendo la proporción */
-    min-height: 300px; /* Establece una altura mínima para todos los slides (ajusta el valor) */
-    max-height: 400px; /* Establece una altura máxima (opcional) */
-  } 
-
-
-
-.navbar {
-    --bs-bg-opacity: 0;
-    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-height: 300px;
+    max-height: 400px;
   }
+
+
+
+
 
 .lista-servicio{
     list-style-type:'✅';
@@ -182,54 +148,49 @@ header ul li a{
 footer {
     background: #f0d1d1;
     height: 25vh;
-    /* color: #ffff; */
     text-align: center;
     padding: 10px 0;
- 
-   
+
+
 }
 
-
-footer ul li a {
-    
-   /* background-color: #e6d4d4;*/
-    border-color: none;
-    color: var(--bs-secondary-color);
-
-
-}   
 
 footer ul li {
 
     width: 300px;
     border-bottom-style: none;
     border-bottom-color: olive;
-       
+
 }
 
 
 .imagen-footer {
-   
+
     width:  30px;
 
 }
 
+footer ul li a span{
+    text-decoration: none;
+    color: #535352;
+ 
+
+}
+
+
 .row.g-5 {
-    justify-content: center; /* Centra las columnas horizontalmente */
+    justify-content: center;
   }
 
 .row.g-5 .col-md-12 {
-    /* text-align: center; */
-    /* display: flex; */
     justify-content: center;
-    /* align-items: center; */
-    height: 200%; /* O la altura que necesites */
+    height: 200%;
     padding-inline: 100px;
   }
 
-  .form-check{
+.form-check{
     justify-content: end;
-    margin-top: 80px; /* Espacio arriba (ajusta el valor según necesites) */
+    margin-top: 80px;
     margin: 100px ;
     margin-bottom: 100px;
     padding: 10px;
@@ -239,3 +200,77 @@ footer ul li {
     justify-content: end;
 
   }
+
+  
+  /* .album .card-img-top {
+    object-fit: cover; 
+    height: 200px;
+  }
+  */
+
+ .album .card {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    height: auto;
+  }
+  
+
+  /*cssCopiar código*/
+  .button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.5s ease;
+  }
+
+  .button:hover {
+    background-color: green;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 0.5s ease, background-color 1s ease;
+  }
+
+  .box:hover {
+    width: 200px;
+    background-color: blue;
+  }
+
+
+.ease-box {
+  transition: transform 1s ease;
+}
+
+.linear-box {
+  transition: transform 1s linear;
+}
+
+.ease-in-box {
+  transition: transform 1s ease-in;
+}
+
+.ease-out-box {
+  transition: transform 1s ease-out;
+}
+
+.ease-in-out-box {
+  transition: transform 1s ease-in-out;
+}
+
+.box:hover {
+  transform: translateX(100px);
+}
+
+cssCopiar código
+.delay-box {
+  transition: opacity 2s ease 1s;
+  opacity: 1;
+}
+
+.delay-box:hover {
+  opacity: 0;
+}
+
