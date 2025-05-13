@@ -1,0 +1,59 @@
+//animacion
+
+h1 {
+  transition: transform 0.3s ease, text-shadow 0.3s ease, font-size 0.3s ease ;
+
+  &:hover {
+    transform: translateY(-30px); // Se mueve 5px hacia arriba
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    font-size: 100px;
+  }
+}
+
+p {
+ transition: font-size 0.3s ease ;
+
+}
+
+p:hover{
+    font-size: 30px;
+ }
+
+
+
+.btn {
+
+    background-color: blue;
+    color: white; 
+    transition: background-color 0.5 ease, width 0.1s ease-out , height 0.1 ease-in-out;
+}
+
+.btn:hover {
+     background-color: green;
+     width: 50%; 
+     height: 10%; 
+}
+
+
+.form-text {
+  
+    transition: transform 0.3s ease, color 0.3 ease-in-out;
+
+}
+
+.form-text:hover {
+    
+  transform: scale(1.1); 
+  color: chartreuse;
+}
+
+.galeria__producto {
+    color: whitesmoke; 
+    transform: 0.3s ease, color 0.1 ease-in-out;
+        
+}
+
+.galeria__producto:hover {
+    
+  transform: scale(1.3); 
+}

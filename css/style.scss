@@ -1,0 +1,25 @@
+// mi sass
+// @import url('./_variables.scss');
+// @import url('./_mixins.scss');
+// @import url('./_base.scss');
+// @import url('./_layout.scss');
+// @import url('./_componente.scss');
+
+// @use '_variables';
+// @use 'mixins';
+// @use '_base';
+// @use 'layout';
+// @use '_componente';
+
+@import '_variables';
+@import '_mixins';
+@import '_base';
+@import '_layout';
+@import '_componente';
+@import '_animacion';
+@import '_media';
+
+
+
+
+

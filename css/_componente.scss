@@ -1,0 +1,85 @@
+// componente
+
+#sobreNosotros {
+  margin-top: $valor-20-pixel;
+}
+
+.carouselExample {
+  padding-top: 16px;
+}
+
+#carouselExample img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  height: auto;
+}
+
+.carousel-item {
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.cards-container {
+  display: flex;
+  width: 1000px;
+  flex-direction: column-reverse;
+  height: 100%;
+  margin-left: 400px;
+  margin-right: 400px;
+  justify-content: center;
+  
+}
+
+.lista-servicio {
+  list-style-type: '✅';
+}
+
+/* galeria */
+.galeria {
+  grid-area: cont;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.galeria__producto {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  width: 400px;
+  justify-content: space-evenly;
+}
+
+
+.row.g-5 {
+  justify-content: center;
+}
+
+.row.g-5 .col-md-12 {
+  justify-content: center;
+  height: 100%;
+  padding-inline: 100px;
+}
+
+.form-check,
+button {
+  justify-content: end;
+}
+
+.album .card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: auto;
+}
+
+.text-body-secondary {
+  --bs-secondary-color: whitesmoke;
+}
+
+
+
+
+
