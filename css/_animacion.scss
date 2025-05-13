@@ -4,7 +4,7 @@ h1 {
   transition: transform 0.3s ease, text-shadow 0.3s ease, font-size 0.3s ease ;
 
   &:hover {
-    transform: translateY(-30px); // Se mueve 5px hacia arriba
+    transform: translateY(-30px); 
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     font-size: 100px;
   }
